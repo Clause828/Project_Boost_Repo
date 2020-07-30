@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Friendly
+  - finish
   layers:
   - Default
   - TransparentFX
