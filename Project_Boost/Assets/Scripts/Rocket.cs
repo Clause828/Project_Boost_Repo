@@ -95,6 +95,7 @@ public class Rocket : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))
         {
             ApplyThrust();
+            mainEngineParticles.Play();
         }
         else
         {
@@ -108,6 +109,5 @@ public class Rocket : MonoBehaviour
         rigidbody.AddRelativeForce(Vector3.up * Thrust);
         if (!audioSource.isPlaying)
             audioSource.PlayOneShot(mainEngine);
-        mainEngineParticles.Play();
     }
 }
